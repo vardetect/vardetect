@@ -1,0 +1,11 @@
+tensorflow-gpu==1.14
+joblib
+sklearn
+keras
+pandas
+opencv-python
+matplotlib
+ipython
+imageio==2.6
+scikit-image
+tensorflow-determinism
