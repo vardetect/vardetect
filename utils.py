@@ -97,10 +97,12 @@ def plot_pca(full_data, labels, num_samples=1000, markers=['o', 'x'], facecolors
     color_maps = {
         'Confidential': 'dodgerblue',
         'Outlier'     : 'darkviolet',
-        'ImageNet'    : 'orangered',
-        'Uniform'     : 'firebrick',
-        'JSMA seed'   : 'darkgreen',
-        'JSMA aug'    : 'tomato'
+        'NPD'         : 'orangered',
+        'Syn'         : 'firebrick',
+        'AdvPD seed'  : 'darkgreen',
+        'AdvPD'       : 'tomato',
+        'AltPD'       : 'darkgreen',
+        'PD'          : 'darkgreen'
     }
     
     project = PCA(n_components=n_comp)

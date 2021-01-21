@@ -57,6 +57,7 @@ class MNISTDSL(BaseDSL):
             self.partition_validation_set(mode, val_frac)
         
         if self.keep_class is not None:
+            print('processing...')
             class_data = []
             class_labels = []
             for i, x in enumerate(self.data):
@@ -65,7 +66,7 @@ class MNISTDSL(BaseDSL):
                     class_labels.append(self.labels[i])
             
             self.data   = np.array(class_data)            
-            self.labels = np.array(self.labels, dtype=np.int32)    
+            self.labels = np.array(class_labels, dtype=np.int32)    
             
         self.labels = np.squeeze(self.labels)
 
