@@ -349,10 +349,8 @@ if cfg.extract_model_activethief:
     
     print "Copymodel will be saved in: ", logdir_sub
 
-    
-#     shutil.rmtree(logdir_copy, ignore_errors=True, onerror=None)    
-            
-    if (cfg.defender_type is not None ) and 'svm' in cfg.defender_type:        
+         
+    if cfg.defender_type is not None: #and 'svm' in cfg.defender_type:        
                                         
         svm = load_svm( oracle_model.filter_model, oracle_model.true_model, train_dsl, val_dsl, test_dsl, noise_train_dsl, logdir_oracle )    
         print "deleting the dir {}" .format( logdir_copy )        
