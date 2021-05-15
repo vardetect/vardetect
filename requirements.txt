@@ -3,7 +3,7 @@ joblib
 sklearn
 keras
 pandas
-opencv-python
+opencv-python==4.2.0.32
 matplotlib
 ipython
 imageio==2.6

@@ -1,6 +1,7 @@
 import numpy as np, os
 from base_dsl import BaseDSL, one_hot_labels
 from os.path import expanduser, join
+from cfg import cfg
 
 class ImagenetDSL(BaseDSL):
     def __init__(self, batch_size, shuffle_each_epoch=False, seed=1337, normalize=True, mode='train', val_frac=None, normalize_channels=False, path=None, resize=None, start_batch=1, end_batch=10, num_to_keep=None):
@@ -14,6 +15,9 @@ class ImagenetDSL(BaseDSL):
 
         if path is None:
             self.path = os.path.join('datasets', 'Imagenet64')
+            
+            # Uncomment to use run.py
+            self.path = os.path.join(cfg.home, 'datasets', 'Imagenet64')
         else:
             self.path = path
         
