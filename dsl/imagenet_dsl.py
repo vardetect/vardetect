@@ -17,7 +17,7 @@ class ImagenetDSL(BaseDSL):
             self.path = os.path.join('datasets', 'Imagenet64')
             
             # Uncomment to use run.py
-            self.path = os.path.join(cfg.home, 'datasets', 'Imagenet64')
+            # self.path = os.path.join(cfg.home, 'datasets', 'Imagenet64')
         else:
             self.path = path
         
