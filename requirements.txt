@@ -1,6 +1,6 @@
 tensorflow-gpu==1.14
 joblib
-sklearn
+scikit-learn
 keras
 pandas
 opencv-python==4.2.0.32
@@ -8,4 +8,4 @@ matplotlib
 ipython
 imageio==2.6
 scikit-image
-tensorflow-determinism
+tensorflow-determinism==0.3.0
